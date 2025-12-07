@@ -5,7 +5,7 @@
     'database_port' => '3306',
     'database_name' => 'zerobat958',
     'database_user' => 'zerobat958',
-    'database_password' => 'PneepdabJzhQ',
+    'database_password' => 'Gamaanara13',
     'database_prefix' => 'mod931_',
     'database_engine' => 'InnoDB',
     'mailer_transport' => 'smtp',

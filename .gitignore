@@ -1,0 +1,12 @@
+# ===============================
+# PrestaShop — CLEAN THEME GITIGNORE
+# Fokus: tylko edycja szablonu
+# ===============================
+
+
+# --- autogenerowane ---
+var/
+var
+/var
+vendor/
+generated/
