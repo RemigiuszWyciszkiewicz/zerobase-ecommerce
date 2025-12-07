@@ -1,0 +1,35 @@
+#subtab-Marketing:not(.link-active):not(.-active) .material-icons.mi-campaign {
+-webkit-mask: url(../img/campaign-24px.svg) no-repeat 50% 50%;
+mask-image: url(../img/campaign-24px.svg) no-repeat 50% 50%;
+-webkit-mask-size: 19px;
+mask-size: 19px;
+background-color: white;
+background-size: cover;
+width: 19px;
+}
+
+li#subtab-AdminAngarFastconfig a {
+align-items: center;
+}
+
+/*
+li#subtab-AdminAngarFastconfig a {
+align-items: center;
+background: #fff;
+color: #000;
+}
+
+li#subtab-AdminAngarFastconfig a:hover {
+background: #f7f7f7;
+color: #1d1d1b;
+}
+
+li#subtab-AdminAngarFastconfig i {
+color: #000!important;
+}
+
+li#subtab-AdminAngarFastconfig a:hover i {
+color: #000!important;
+}
+*/
+
