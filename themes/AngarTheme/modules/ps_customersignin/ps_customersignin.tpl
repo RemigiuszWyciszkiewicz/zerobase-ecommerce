@@ -74,7 +74,6 @@
 
 
 	<div class="hidden-sm-down">
-		<span class="welcome">{l s='Welcome,' d='Shop.Theme.Mytheme'}</span>
 		{if $logged}
 			<a class="account" href="{$urls.pages.my_account}" title="{l s='View my customer account' d='Shop.Theme.Customeraccount'}" rel="nofollow">{$customerName}</a>
 			<a class="logout" href="{$urls.actions.logout}" rel="nofollow">({l s='Sign out' d='Shop.Theme.Actions'})</a>
