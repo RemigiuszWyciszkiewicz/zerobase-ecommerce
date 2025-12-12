@@ -738,6 +738,7 @@ z-index: 1;
 border: 1px solid transparent;
 background: #fff;
 padding: 8px 8px 8px 8px;
+border-radius: 7px;
 -moz-box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 4px 0px;
 -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 4px 0px;
 box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 4px 0px;
@@ -754,6 +755,7 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 8px 0px;
 /* Product-list border style 3 */
 .pl_border_type3 div#content-wrapper .products .product-miniature .thumbnail-container {
 padding: 8px 8px 8px 8px;
+border-radius: 7px;
 border: 1px solid transparent;
 }
 
