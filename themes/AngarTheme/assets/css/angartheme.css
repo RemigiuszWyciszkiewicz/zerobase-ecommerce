@@ -685,7 +685,7 @@ div#search_widget form input[type=text] {
 height: 40px;
 padding: 10px;
 color: #ffffff !important;
-border: 1px solid #ffffff;
+border: 2px solid #ffffff;
 background-color: #000000;
 border-radius: 20px !important;
 }
