@@ -174,8 +174,8 @@ text-align: center;
 
 .stickycart_yes.sticky_cart #header div#_desktop_cart .blockcart .header a.cart_link i {
 position: relative;
-top: 0;
-left: 0;
+top: 4px;
+left: 4px;
 }
 
 .stickycart_yes.sticky_cart #header div#_desktop_cart .blockcart .header a.cart_link .cart_title,
@@ -201,7 +201,7 @@ overflow: hidden;
 
 .stickycart_yes.sticky_cart #header div#_desktop_cart .blockcart .header a.cart_link span.cart-products-count span.cart_qty span {
 display: block;
-background: #f8653d;
+background: black !important;
 }
 
 .stickycart_yes.sticky_cart #header #subcart {
@@ -1359,27 +1359,22 @@ text-transform: uppercase;
 .cart_style_3 #header div#_desktop_cart .blockcart .header a.cart_link > i {
 left: 0;
 top: 0;
-font-size: 35px;
+font-size: 33px;
 line-height: 40px;
 }
 
-.cart_style_2 #header .blockcart .header a.cart_link > i:before,
-.cart_style_3 #header .blockcart .header a.cart_link > i:before {
-content: '\e87f';
-}
 
 /* Cart style 3 */
 .cart_style_3 #header div#_desktop_cart .blockcart .header a.cart_link span.cart-products-count span.cart_qty {
 position: absolute;
-top: -4px;
-left: 22px;
-background: #1b82d6;
-color: #fff;
+top: 1px;
+left: 24px;
+color: black;
 width: 16px;
 height: 16px;
 line-height: 16px;
 border-radius: 16px;
-font-size: 10px;
+font-size: 12px;
 text-align: center;
 }
 
@@ -1394,8 +1389,8 @@ background: none !important;
 
 .cart_style_2.sticky_cart #header div#_desktop_cart .blockcart .header a.cart_link > i, 
 .cart_style_3.sticky_cart #header div#_desktop_cart .blockcart .header a.cart_link > i {
-font-size: 30px;
-line-height: 50px;
+font-size: 33px;
+line-height: 40px;
 }
 
 

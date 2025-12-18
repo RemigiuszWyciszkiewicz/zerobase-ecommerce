@@ -25,7 +25,7 @@
 
 {* AngarTheme *}
 
-<div id="_desktop_cart">
+<div class="cart" id="_desktop_cart">
 
 	<div class="cart_top">
 
@@ -34,7 +34,7 @@
 			
 				<div class="cart_index_title">
 					<a class="cart_link" rel="nofollow" href="{$cart_url}">
-						<i class="shopping-cart"></i>
+						<i class="fa-solid fa-cart-shopping"></i>
 						<span class="cart-products-count">
 							<span class="cart_qty"><span>{$cart.products_count}</span></span>
 							<span class="cart_text"> {if $cart.products_count == 1}{l s='Product' d='Shop.Theme.Mytheme'}{else}{l s='Products' d='Shop.Theme.Mytheme'}{/if} - </span>
