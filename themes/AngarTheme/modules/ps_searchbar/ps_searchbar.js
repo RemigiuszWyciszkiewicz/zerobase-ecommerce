@@ -7,7 +7,6 @@ $(document).ready(function () {
 
     $.widget("prestashop.psBlockSearchAutocomplete", $.ui.autocomplete, {
       _renderItem: function (ul, product) {
-        console.log("psBlockSearchAutocomplete", product);
         return $("<li>")
           .append(
             $("<a>")
@@ -68,9 +67,7 @@ $(document).ready(function () {
     var $clearButton = $searchWidget.find("i.clear");
 
     console.log($searchBox);
-    console.log(searchURL);
 
-    console.log("$searchWidget", $searchWidget);
     $.widget("prestashop.psBlockSearchAutocomplete", $.ui.autocomplete, {
       _renderItem: function (ul, product) {
         var image = product.cover

@@ -476,11 +476,11 @@ top: 0;
 z-index: 9;
 }
 
-.stickymenu_yes.sticky_menu_rwd .rwd_menu_open {
-position: fixed;
-top: 42px;
+/* .stickymenu_yes.sticky_menu_rwd .rwd_menu_open {
+position: sticky;
+top: 0;
 z-index: 9;
-}
+} */
 
 }
 

@@ -415,6 +415,15 @@ $("#menu-icon2").on("click", function () {
   $("#mobile_user_wrapper").hide();
 });
 
+$("#menu-icon2").on("click", function () {
+  window.scrollTo(0, 0);
+});
+
+/* RWD menu */
+$("#close-menu-icon").on("click", function () {
+  $("#mobile_top_menu_wrapper2").slideToggle("fast");
+});
+
 $("#search-icon").on("click", function () {
   $("#mobile_search_wrapper").slideToggle("fast");
   $("#mobile_top_menu_wrapper2").hide();

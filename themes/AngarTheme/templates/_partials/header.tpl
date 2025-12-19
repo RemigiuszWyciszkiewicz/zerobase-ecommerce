@@ -17,9 +17,15 @@ information. * * @author PrestaShop SA
   {/block} {block name='header_nav'}
   <nav class="header-nav">
     <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-xs-12">
-          {hook h='displayNav1'} {hook h='displayNav2'}
+      <div class="header-banner-container">
+        <div>
+          {hook h='displayNav1'}
+        </div>
+        <div>
+          <div class="delivery-info">
+            <i class="fa-regular fa-truck delivery-info-icon"></i>
+            <span class="delivery-info-text">Darmowa dostawa od 150zł!</span>
+          </div>
         </div>
       </div>
     </div>
@@ -48,7 +54,12 @@ information. * * @author PrestaShop SA
         </a>
         {/if}
       </div>
-      <div class="cart-container">{widget name="ps_shoppingcart"}</div>
+      <div class="cart-container">
+        <!-- <div class="profile-icon">
+            <i class="fa-regular fa-user"></i>
+        </div> -->
+        {widget name="ps_shoppingcart"}
+      </div>
     </div>
 
     <div id="rwd_menu" class="hidden-md-up">
@@ -68,7 +79,7 @@ information. * * @author PrestaShop SA
     <div class="container">
       <div
         id="mobile_top_menu_wrapper2"
-        class="rwd_menu_open hidden-md-up"
+        class="rwd_menu_open hidden-md-up mobile_top_menu_wrapper"
         style="display: none"
       >
         <div class="js-top-menu mobile" id="_mobile_top_menu"></div>
