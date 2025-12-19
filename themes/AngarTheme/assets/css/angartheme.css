@@ -278,6 +278,7 @@ body #search_filters .facet .facet-label .custom-radio {
   font-weight: 700;
 }
 
+
 .btn-primary,
 .btn-secondary,
 .btn-tertiary,
@@ -490,6 +491,10 @@ header.page-header h1 {
 
 #notifications ul {
   margin-bottom: 0;
+}
+
+.page-index #content-wrapper {
+  padding: 0;
 }
 
 /* HEADER */
