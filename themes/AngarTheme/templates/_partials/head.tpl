@@ -79,6 +79,7 @@
 {block name='head_icons'}
   <link rel="icon" type="image/vnd.microsoft.icon" href="{$shop.favicon}?{$shop.favicon_update_time}">
   <link rel="shortcut icon" type="image/x-icon" href="{$shop.favicon}?{$shop.favicon_update_time}">
+  <link rel="stylesheet" href="https://use.typekit.net/ocy7pdj.css">
   <script src="https://kit.fontawesome.com/a990b3dd6a.js" crossorigin="anonymous"></script>
 {/block}
 

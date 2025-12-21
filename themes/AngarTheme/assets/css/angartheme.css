@@ -34,7 +34,8 @@ body {
   background-repeat: repeat;
   background-position: left top;
   color: #000;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-family: "proxima-nova", sans-serif !important;
+  /* font-family: "Poppins", Arial, Helvetica, sans-serif; */
   line-height: 18px;
   font-size: 13px;
   -webkit-font-smoothing: antialiased;
@@ -277,7 +278,6 @@ body #search_filters .facet .facet-label .custom-radio {
   line-height: 16px;
   font-weight: 700;
 }
-
 
 .btn-primary,
 .btn-secondary,
@@ -1222,8 +1222,9 @@ ul.top-menu > li.home_icon > a span {
 /* Tabs nav */
 .tabs ul.nav-tabs {
   border: none;
-  border-bottom: 1px solid #d6d4d4;
-  margin-bottom: 20px;
+  /* border-bottom: 1px solid #d6d4d4; */
+  margin-bottom: 25px;
+  margin-top: 30px;
 }
 
 .tabs ul.nav-tabs li.nav-item {
@@ -1236,11 +1237,11 @@ ul.top-menu > li.home_icon > a span {
   padding: 0;
   margin: 0 0;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 28px;
   line-height: 30px;
   text-transform: uppercase;
   border: 0;
-  border-bottom: 2px solid transparent;
+  /* border-bottom: 2px solid transparent; */
   margin-bottom: -1px;
 }
 
@@ -1249,8 +1250,67 @@ ul.top-menu > li.home_icon > a span {
   border-color: #1b82d6;
 }
 
+.featured-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.featured-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.featured-container .see-more-icon-link {
+  display: inline-block;
+}
+
+.featured-container .see-more-icon {
+  color: #f47021;
+  font-size: 1.5rem;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  cursor: pointer;
+}
+
+.featured-container .see-more-icon:hover {
+  background-color: #1c1f251c;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.featured-container .see-more-icon:active {
+transform: scale(0.95);
+}
+
+.featured-container-title {
+  display: flex;
+  align-items: center;
+}
+
+.featured-container-title .nav-link {
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.featured-container-title .nav-link:hover {
+  color:#000000af;
+}
+
+.featured-container-title .nav-link:active {
+  transform: scale(0.99);
+}
+
+.featured-container i {
+  font-size: 2rem;
+  margin-right: 0.6rem;
+}
+
 #index .tabs ul.nav-tabs {
-  text-align: center;
+  /* text-align: center; */
 }
 
 /*** PRODUCT-LIST ***/

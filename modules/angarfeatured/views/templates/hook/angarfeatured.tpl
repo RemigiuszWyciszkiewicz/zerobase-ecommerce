@@ -13,8 +13,8 @@
       {include file="catalog/_partials/miniatures/product.tpl" product=$product}
     {/foreach}
   </div>
-  <a class="all-product-link float-xs-left float-md-right h4" href="{$allProductsLink2}">
+  <!-- <a class="all-product-link float-xs-left float-md-right h4" href="{$allProductsLink2}">
     {l s='All products' d='Shop.Theme.Catalog'}<i class="material-icons">&#xE315;</i>
-  </a>
+  </a> -->
   <div class="clearfix"></div>
 </section>

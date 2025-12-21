@@ -410,14 +410,15 @@ margin-top: -17px;
 height: 34px;
 width: 34px;
 text-align: center;
-background: rgba(255, 255, 255, 0.7);
+background: transparent;
 -webkit-transition: all 0.5s ease;
 -moz-transition: all 0.5s ease;
 transition: all 0.5s ease;
 }
 
 #homepage-slider .bx-wrapper .bx-controls-direction a:hover{
-background: #fff;
+    background: #ffffff12;
+    border-radius: 6px;
 }
 
 div#homepage-slider:hover .bx-wrapper .bx-controls-direction a{
@@ -425,11 +426,11 @@ opacity: 1;
 }
 
 #homepage-slider .bx-wrapper .bx-controls-direction a:before{
-display: block;
-color: #19232d;
-font-size: 24px;
-padding: 0px;
-line-height: 34px;
+    display: block;
+    color: #ffffff;
+    font-size: 30px;
+    padding: 0px;
+    line-height: 32px;
 }
 
 #homepage-slider .bx-wrapper .bx-controls-direction a.bx-prev{
@@ -438,6 +439,7 @@ left: -34px;
 
 #homepage-slider:hover .bx-wrapper .bx-controls-direction a.bx-prev{
 left: 10px;
+background-color: transparent;
 }
 
 #homepage-slider .bx-wrapper .bx-controls-direction a.bx-next{

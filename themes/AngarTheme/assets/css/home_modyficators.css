@@ -174,8 +174,8 @@ text-align: center;
 
 .stickycart_yes.sticky_cart #header div#_desktop_cart .blockcart .header a.cart_link i {
 position: relative;
-top: 4px;
-left: 4px;
+top: 10px;
+left: 7px;
 }
 
 .stickycart_yes.sticky_cart #header div#_desktop_cart .blockcart .header a.cart_link .cart_title,
@@ -186,8 +186,8 @@ display: none!important;
 
 .stickycart_yes.sticky_cart #header div#_desktop_cart .blockcart .header a.cart_link span.cart-products-count span.cart_qty {
 display: block!important;
-top: -4px;
-left: -4px;
+top: -2px;
+left: -2px;
 position: absolute;
 color: #fff;
 font-size: 12px;
@@ -521,7 +521,7 @@ margin: 0 auto 0;
 
 /* Slider controls */
 .slider_controls_black #homepage-slider .bx-wrapper .bx-controls-direction a {
-background: rgba(0, 0, 0, 0.5);
+background: transparent
 }
 
 .slider_controls_black #homepage-slider .bx-wrapper .bx-controls-direction a:before {
@@ -529,7 +529,7 @@ color: #fff;
 }
 
 .slider_controls_black #homepage-slider .bx-wrapper .bx-controls-direction a:hover {
-background: #000;
+background: transparent
 }
 
 
@@ -1389,8 +1389,8 @@ background: none !important;
 
 .cart_style_2.sticky_cart #header div#_desktop_cart .blockcart .header a.cart_link > i, 
 .cart_style_3.sticky_cart #header div#_desktop_cart .blockcart .header a.cart_link > i {
-font-size: 33px;
-line-height: 40px;
+font-size: 30px;
+line-height: 30px;
 }
 
 

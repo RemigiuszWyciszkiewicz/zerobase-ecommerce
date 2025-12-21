@@ -192,6 +192,25 @@
   /* HEADER */
   /* Nav */
 
+  .featured-container {
+    margin-left: 15px;
+  }
+
+  .featured-container .nav-link {
+    font-size: 1.3rem !important;
+  }
+
+  .featured-container .featured-icon {
+    font-size: 1.4rem !important;
+    top: 1px;
+    position: relative;
+  }
+  
+  .featured-products {
+    padding: 0 15px;
+  }
+
+
   .lang_currency_top {
     float: right;
   }
