@@ -1,4 +1,5 @@
 @import "./main-menu.css";
+@import "./product-card.css";
 
 /*** AngarTheme - version 2.7.0 ***/
 
@@ -1414,12 +1415,12 @@ transform: scale(0.95);
   width: 130px;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .products .product-miniature .thumbnail-container:hover .quick-view {
     display: block;
     opacity: 1;
   }
-}
+} */
 
 .product-image-container .quick-view i {
   display: none;
@@ -1509,7 +1510,6 @@ a.product-flags-plist span.product-flag.out_of_stock {
   padding: 0;
   margin: 0;
   min-height: auto;
-  height: 32px;
   overflow: hidden;
 }
 
@@ -1547,7 +1547,6 @@ body .product-price-and-shipping span {
 body .product-price-and-shipping span.price {
   color: #ff5722;
   font-weight: 600;
-  font-size: 15px;
 }
 
 body .product-price-and-shipping span.price_small {
@@ -1703,7 +1702,6 @@ body .product-price-and-shipping span.regular-price {
   display: block;
   margin-top: 4px;
   min-height: 18px;
-  font-weight: bold;
 }
 
 .products .product-miniature .pl-availability .product-available {

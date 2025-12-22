@@ -28,7 +28,6 @@
 {block name='product_miniature_item'}
   <article class="product-miniature js-product-miniature{foreach from=$product.flags item=flag}{if $flag.type == "out_of_stock"} product_out_of_stock{/if}{/foreach}" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}" aria-label="{$product.name|truncate:160:'...'}">
     <div class="thumbnail-container">
-
 		<div class="product-left">
 			<div class="product-image-container">
 				{block name='product_flags'}
@@ -209,9 +208,8 @@
 				{/block}
 
 				{* AngarTheme *}
-				<div class="button-container">
+				<!-- <div class="button-container">
 					{hook h='displayAddtocart' product=$product}
-
 					{if !$configuration.is_catalog}
 						<form action="{$urls.pages.cart}" method="post" class="add-to-cart-or-refresh">
 						  <input type="hidden" name="token" value="{$static_token}">
@@ -262,7 +260,7 @@
 						</a>
 					{/if}
 
-				</div>
+				</div> -->
 
 				{if !$configuration.is_catalog}
 
@@ -319,6 +317,47 @@
 		</div>
 
 		<div class="clearfix"></div>
+	 
+
+				<form action="{$urls.pages.cart}" method="post" class="add-to-cart-or-refresh">
+						  <input type="hidden" name="token" value="{$static_token}">
+						  <input type="hidden" name="id_product" value="{$product.id}" class="product_page_product_id">
+
+						  <div class="qty_container">
+							  <label for="qty-{$product.id_product}" class="sr-only">{l s='%productName% product quantity field' sprintf=['%productName%' => $product.name] d='Shop.Theme.Checkout'}</label>
+							  <input id="qty-{$product.id_product}" type="number" name="qty" value="{if $product.minimal_quantity}{$product.minimal_quantity}{else}1{/if}" min="{if $product.minimal_quantity}{$product.minimal_quantity}{else}1{/if}" max="{$product.quantity}">
+							  <button type="button" aria-label="{l s='Increase quantity for %s' sprintf=[$product.name] d='Shop.Theme.Catalog'}" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="qty_btn qty_plus"><i class="material-icons touchspin-up" aria-hidden="true"></i></button>
+							  <button type="button" aria-label="{l s='Decrease quantity for %s' sprintf=[$product.name] d='Shop.Theme.Catalog'}" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="qty_btn qty_minus"><i class="material-icons touchspin-down" aria-hidden="true"></i></button>
+						  </div>
+
+							{hook h='displayPLCombinations' product=$product}
+
+							{if $product.embedded_attributes.customizable > 0}
+							  <button class="add-to-card quick-view" href="{$product.link|escape:'html':'UTF-8'}"><i class="fa-solid fa-plus add-to-card-icon"></i></button>
+
+							  <!-- <a class="btn add-to-cart quick-view" href="{$product.link|escape:'html':'UTF-8'}" title="{l s='Product Details' d='Shop.Theme.Catalog'}">
+								<span>{l s='View details' d='Admin.Actions'}</span>
+							  </a> -->
+
+							{else}
+								{if (!isset($product.customization_required) || !$product.customization_required) && ($product.allow_oosp || $product.quantity > 0)}
+								<button class="add-to-card"  data-button-action="add-to-cart" type="submit"><i class="fa-solid fa-plus add-to-card-icon"></i></button>
+								  <!-- <button class="btn add-to-cart" data-button-action="add-to-cart" type="submit">
+									<i class="material-icons shopping-cart"></i>
+									{l s='Add to cart' d='Shop.Theme.Actions'}
+								  </button> -->
+								{else}
+								  <!-- <button class="btn add-to-cart" data-button-action="add-to-cart" type="submit" disabled>
+									<i class="material-icons shopping-cart"></i>
+									{l s='Add to cart' d='Shop.Theme.Actions'}
+								  </button> -->
+								  <button class="add-to-card"  data-button-action="add-to-cart" type="submit" disabled><i class="fa-solid fa-plus add-to-card-icon"></i></button>
+								{/if}
+
+							{/if}
+						</form>
+	<!-- <button class="add-to-card"><i class="fa-solid fa-plus add-to-card-icon"></i></button> -->
+
 
     </div>
   </article>
