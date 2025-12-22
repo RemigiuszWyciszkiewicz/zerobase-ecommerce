@@ -6,7 +6,7 @@
 
 {if $infos|@count > 0}
 <!-- MODULE Block cmsinfo -->
-<div id="angarinfo_block">
+<div class="angarinfo_block" id="angarinfo_block">
 	<div class="container">
 		{foreach from=$infos item=info2}
 			<div class="col-xs-3">{$info2.text nofilter} {*HTML CONTENT*}</div>

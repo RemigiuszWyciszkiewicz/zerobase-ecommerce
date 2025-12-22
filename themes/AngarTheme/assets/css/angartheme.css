@@ -1,5 +1,9 @@
 @import "./main-menu.css";
 @import "./product-card.css";
+@import "./home-about-store.css";
+@import "./cms-info.css";
+@import "./home-products-list.css";
+
 
 /*** AngarTheme - version 2.7.0 ***/
 
@@ -77,6 +81,8 @@ label {
   margin-bottom: 8px;
   text-align: left;
 }
+
+.
 
 small.label,
 small.value {
@@ -1225,7 +1231,6 @@ ul.top-menu > li.home_icon > a span {
   border: none;
   /* border-bottom: 1px solid #d6d4d4; */
   margin-bottom: 25px;
-  margin-top: 30px;
 }
 
 .tabs ul.nav-tabs li.nav-item {
@@ -1251,64 +1256,6 @@ ul.top-menu > li.home_icon > a span {
   border-color: #1b82d6;
 }
 
-.featured-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
-}
-
-.featured-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
-}
-
-.featured-container .see-more-icon-link {
-  display: inline-block;
-}
-
-.featured-container .see-more-icon {
-  color: #f47021;
-  font-size: 1.5rem;
-  padding: 4px;
-  border-radius: 4px;
-  transition: background-color 0.3s ease, transform 0.1s ease;
-  cursor: pointer;
-}
-
-.featured-container .see-more-icon:hover {
-  background-color: #1c1f251c;
-  padding: 4px;
-  border-radius: 4px;
-}
-
-.featured-container .see-more-icon:active {
-transform: scale(0.95);
-}
-
-.featured-container-title {
-  display: flex;
-  align-items: center;
-}
-
-.featured-container-title .nav-link {
-  transition: background-color 0.3s ease, transform 0.1s ease;
-}
-
-.featured-container-title .nav-link:hover {
-  color:#000000af;
-}
-
-.featured-container-title .nav-link:active {
-  transform: scale(0.99);
-}
-
-.featured-container i {
-  font-size: 2rem;
-  margin-right: 0.6rem;
-}
 
 #index .tabs ul.nav-tabs {
   /* text-align: center; */

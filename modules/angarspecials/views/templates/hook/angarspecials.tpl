@@ -1,20 +1,20 @@
-{*
-* @author	Krzysztof Pecak
-* @copyright	2025 Krzysztof Pecak
-* @license    Commercial license valid for 1 shop
-*}
-{* AngarTheme *}
-<section class="specials-products tab-pane fade" id="angarspecials">
-  <h2 class="h2 products-section-title text-uppercase index_title">
-    <a href="{$allSpecialProductsLink2}">{l s='On sale' d='Shop.Theme.Catalog'}</a>
+{* * @author Krzysztof Pecak * @copyright 2025 Krzysztof Pecak * @license
+Commercial license valid for 1 shop *} {* AngarTheme *}
+<section class="products-container tab-pane fade" id="angarspecials">
+  <h2 class="h2 products-container-title text-uppercase">
+    <i
+      class="fa-solid fa-tags fa-beat products-container-title-icon"
+      style="color: #f47021"
+    ></i>
+    <a class="products-container-title-link" href="{$allSpecialProductsLink2}"
+      >{l s='On sale' d='Shop.Theme.Catalog'}</a
+    >
+    <a class="see-more-icon-link" href="{$allSpecialProductsLink2}">
+      <i class="fa-solid fa-angle-right see-more-icon"></i>
+    </a>
   </h2>
   <div class="products">
-    {foreach from=$products item="product"}
-      {include file="catalog/_partials/miniatures/product.tpl" product=$product}
-    {/foreach}
+    {foreach from=$products item="product"} {include
+    file="catalog/_partials/miniatures/product.tpl" product=$product} {/foreach}
   </div>
-  <a class="all-product-link float-xs-left float-md-right h4" href="{$allSpecialProductsLink2}">
-    {l s='All sale products' d='Shop.Theme.Catalog'}<i class="material-icons">&#xE315;</i>
-  </a>
-  <div class="clearfix"></div>
 </section>

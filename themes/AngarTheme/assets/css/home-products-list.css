@@ -1,0 +1,102 @@
+.products-container {
+  padding: 1.5rem 0 1rem 0;
+  border-radius: 0;
+  border: 1px solid #eaecf0;
+  background: #f9fafb;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.products-container .see-more-icon-link {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.products-container .see-more-icon {
+  color: #f47021;
+  font-size: 2rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  cursor: pointer;
+}
+
+.products-container .see-more-icon:hover {
+  background-color: #1c1f251c;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.products-container .see-more-icon:active {
+  transform: scale(0.95);
+}
+
+.products-container .products-container-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.products-container .products-container-title .products-container-title-link {
+  cursor: pointer;
+  text-decoration: none;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  border-bottom: none !important;
+}
+
+.products-container .products-container-title .products-container-title-link:hover {
+  color: #000000af;
+}
+
+.products-container .products-container-title .products-container-title-link:active {
+  transform: scale(0.99);
+}
+
+.products-container .products-container-title-icon {
+  font-size: 2rem;
+  margin-right: 0.6rem;
+}
+
+.products-container {
+  /* margin-left: 15px; */
+}
+
+.products-container .products-container-title .products-container-title-link {
+  font-size: 1.3rem !important;
+}
+
+.products-container .products-container-title-icon {
+  font-size: 1.4rem !important;
+  top: 1px;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .products-container {
+    /* margin-left: 15px; */
+    padding: 1rem 1rem 1rem 1rem;
+  }
+
+  .products-container .products-container-title .products-container-title-link {
+    font-size: 1.4rem !important;
+  }
+
+  .products-container .products-container-title-icon {
+    font-size: 1.4rem !important;
+    top: 1px;
+    position: relative;
+  }
+  
+}
+
+@media (min-width: 767px) {
+  .products-container {
+    border: 1px solid #eaecf0;
+    background: #f9fafb;
+    padding: 1.5rem 2rem 1rem 2rem;
+    border-radius: 7px;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+}

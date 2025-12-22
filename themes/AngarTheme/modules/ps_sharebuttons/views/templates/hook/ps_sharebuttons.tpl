@@ -27,13 +27,13 @@
 
 {block name='social_sharing'}
   {if $social_share_links}
-    <div class="social-sharing block-social">
+    <!-- <div class="social-sharing block-social">
       <span>{l s='Share' d='Shop.Theme.Actions'}</span>
       <ul>
         {foreach from=$social_share_links item='social_share_link'}
           <li class="{$social_share_link.class}"><a href="{$social_share_link.url}" title="{$social_share_link.label}" target="_blank"><span class="sr-only">{$social_share_link.label}</span></a></li>
         {/foreach}
       </ul>
-    </div>
+    </div> -->
   {/if}
 {/block}
