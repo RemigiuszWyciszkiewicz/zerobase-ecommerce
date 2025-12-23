@@ -1,0 +1,42 @@
+@media (min-width: 767px) {
+  .footer-container .links .collapse {
+    display: inline-block !important;
+  }
+
+
+
+  .footer-container .h3 {
+    padding-bottom: 0.5rem;
+  }
+
+  .footer-container {
+  padding-top: 2rem !important;
+}
+
+}
+
+  .footer-container .links span {
+    border: none;
+    border-color: transparent !important;
+    font-size: 20px;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+  }
+
+  .footer-container .myaccount-title a {
+    border: none;
+    border-color: transparent !important;
+    font-size: 20px;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+  }
+
+  .footer-container .block-contact-title a {
+    border: none;
+    border-color: transparent !important;
+    font-size: 20px;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+  }
+
+
+  .footer-container {
+  padding-top: 1rem !important;
+}
