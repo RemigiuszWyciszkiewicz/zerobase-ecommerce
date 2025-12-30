@@ -44,7 +44,9 @@
         {/block}
       </section>
     {/block}
-
+    
+    {hook h='displayYoutubeShorts'}
+    
     {block name='page_footer_container'}
       <footer class="page-footer">
         {block name='page_footer'}
