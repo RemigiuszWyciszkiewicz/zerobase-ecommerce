@@ -118,7 +118,7 @@
   height: 60px;
   border-radius: 50%;
   overflow: hidden;
-  border: 3px solid #f47021;
+  border: 1px solid #f47021;
   padding: 3px;
   background: linear-gradient(45deg, #f47021, #ff8c42);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -277,7 +277,7 @@ body:not(.page-index) .menu-story-label {
   #_mobile_top_menu .top-menu-desktop {
     display: flex;
     gap: 12px;
-    padding: 10px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
     scrollbar-width: none;
   }
 
