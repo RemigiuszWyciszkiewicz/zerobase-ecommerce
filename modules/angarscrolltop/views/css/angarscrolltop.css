@@ -25,6 +25,7 @@ outline: 0;
 #scroll_top:before {
 font-family: "FontAwesome";
 content: "\f106";
+color: white;
 }
 
 #scroll_top:hover,

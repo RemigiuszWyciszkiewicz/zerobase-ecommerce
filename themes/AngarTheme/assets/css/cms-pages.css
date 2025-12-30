@@ -1,0 +1,42 @@
+.page-content.page-cms {
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .page-content.page-cms {
+    padding: 0 1rem !important;
+    text-align: left !important;
+  }
+}
+
+.cms-id-1 .page-header {
+  display: none;
+}
+
+.cms-id-2 .page-header {
+  display: none;
+}
+
+.cms-id-3 .page-header {
+  display: none;
+}
+
+.cms-id-4 .page-header {
+  display: none;
+}
+
+.cms-id-5 .page-header {
+  display: none;
+}
+
+.cms-id-6 .page-header {
+  display: none;
+}
+
+.cms-id-7 .page-header {
+  display: none;
+}
+
+.cms-id-8 .page-header {
+  display: none;
+}

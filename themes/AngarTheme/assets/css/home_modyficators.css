@@ -1367,14 +1367,14 @@ line-height: 40px;
 /* Cart style 3 */
 .cart_style_3 #header div#_desktop_cart .blockcart .header a.cart_link span.cart-products-count span.cart_qty {
 position: absolute;
+font-weight: 300;
 top: 1px;
 left: 24px;
-color: black;
 width: 16px;
 height: 16px;
 line-height: 16px;
 border-radius: 16px;
-font-size: 12px;
+font-size: 11px;
 text-align: center;
 }
 
@@ -1390,8 +1390,15 @@ background: none !important;
 .cart_style_2.sticky_cart #header div#_desktop_cart .blockcart .header a.cart_link > i, 
 .cart_style_3.sticky_cart #header div#_desktop_cart .blockcart .header a.cart_link > i {
 font-size: 30px;
-line-height: 30px;
+line-height: 40px;
 }
+
+@media (min-width: 768px) {
+  .cart_style_3.sticky_cart #header div#_desktop_cart .blockcart .header a.cart_link > i {
+  line-height: 30px;
+  }
+}
+
 
 
 /*** LEFT COLUMN ***/

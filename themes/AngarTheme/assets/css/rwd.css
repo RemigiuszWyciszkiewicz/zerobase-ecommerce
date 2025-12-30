@@ -288,6 +288,7 @@ display: none;
 
     .logo-container img {
       max-height: 43px !important;
+      margin-top: 10px;
     }
   }
 
@@ -309,6 +310,7 @@ display: none;
     cursor: pointer;
     position: relative;
     color: #cbcbcb;
+    top: -3px;
   }
 
   #search_widget_mobile #search_widget form input[type="text"] {
@@ -389,7 +391,7 @@ color: #fff;
   /* RWD menu open */
   .rwd_menu_open {
     z-index: 99;
-    position: absolute;
+    position: fixed;
     background: #fff;
     border: 1px solid #d6d4d4;
     border-top: 0;

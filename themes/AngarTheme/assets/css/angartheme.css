@@ -3,7 +3,10 @@
 @import "./home-about-store.css";
 @import "./cms-info.css";
 @import "./footer.css";
+@import "./submenu.css";
+@import "./cms-pages.css";
 @import "./home-products-list.css";
+@import "./footer-contact.css";
 
 
 /*** AngarTheme - version 2.7.0 ***/
@@ -1129,8 +1132,8 @@ header#header nav.header-nav #subcart {
 
 #_desktop_top_menu > ul > li > a {
   position: relative;
-  display: block;
-  padding: 12px 18px;
+  /* display: block; */
+  padding: 12px ;
   color: #ffffff;
   font-weight: 600;
   font-size: 14px;
@@ -1139,7 +1142,7 @@ header#header nav.header-nav #subcart {
 }
 
 #_desktop_top_menu > ul > li:hover > a {
-  background: #1b82d6;
+  background: transparent !important  ;
   color: #fff;
 }
 

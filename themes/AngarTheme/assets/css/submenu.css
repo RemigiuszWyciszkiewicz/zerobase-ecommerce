@@ -1,0 +1,9 @@
+.sub-menu .category {
+  width: 100%;
+  margin-right: -10px;
+  border-bottom: 0 !important;
+}
+
+.sub-menu .dropdown-item:hover {
+  color: white !important;
+}
