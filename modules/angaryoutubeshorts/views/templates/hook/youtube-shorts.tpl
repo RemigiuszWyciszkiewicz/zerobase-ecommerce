@@ -1,14 +1,6 @@
 <div class="youtube-shorts-container">
     <div class="youtube-shorts-header">
-        <h2 class="youtube-shorts-title">SOCIAL FEED</h2>
-        <div class="youtube-shorts-controls">
-            <button class="yt-shorts-prev" aria-label="Previous">
-                <i class="fa fa-chevron-left"></i>
-            </button>
-            <button class="yt-shorts-next" aria-label="Next">
-                <i class="fa fa-chevron-right"></i>
-            </button>
-        </div>
+        <!-- <h2 class="youtube-shorts-title">SOCIAL FEED</h2> -->
     </div>
 
     <div class="youtube-shorts-slider-wrapper">

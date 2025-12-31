@@ -309,6 +309,10 @@ body:not(.page-index) .menu-story-label {
   .top-menu-mobile {
     display: block;
   }
+
+  .top-menu-desktop {
+    padding: 15px 0 10px 8px;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {

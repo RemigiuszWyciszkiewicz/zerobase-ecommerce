@@ -54,7 +54,6 @@
 .youtube-shorts-slider-wrapper {
   overflow: hidden;
   position: relative;
-  padding: 10px 10px;
 }
 
 .youtube-shorts-slider {
@@ -153,13 +152,13 @@
 
 /* Hide YouTube UI elements */
 .youtube-short-player::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   height: 80px;
-  background: linear-gradient(to top, rgba(0,0,0,0.4) 0%, transparent 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
   pointer-events: none;
   z-index: 1;
 }
@@ -192,6 +191,10 @@
   .youtube-shorts-modal-body iframe {
     max-width: 90vw;
     height: 70vh;
+  }
+
+  .youtube-shorts-slider-wrapper {
+    padding: 1rem 1rem;
   }
 }
 
