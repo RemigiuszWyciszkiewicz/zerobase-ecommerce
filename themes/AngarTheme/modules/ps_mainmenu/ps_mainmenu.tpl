@@ -65,8 +65,60 @@
       </ul>
 	  	{if $depth == 0}
 			<div class="profile-container hidden-md-up">
-				<i class="fa-regular fa-user user-icon"></i>
-				{widget name="ps_customersignin"}
+				<div class="username-container">
+					<i class="fa-regular fa-user user-icon"></i>
+					{widget name="ps_customersignin"}
+				</div>
+
+				{* Quick account links for mobile menu *}
+				{if $customer.is_logged}
+					<ul class="mobile-account-links">
+						<li><a id="identity-link-mobile" href="{$urls.pages.identity}">
+							<i class="material-icons">&#xE853;</i>
+							{l s='Your personal information' d='Shop.Theme.Customeraccount'}
+						</a></li>
+
+						{if $customer.addresses|count}
+							<li><a id="addresses-link-mobile" href="{$urls.pages.addresses}">
+								<i class="material-icons">&#xE56A;</i>
+								{l s='Addresses' d='Shop.Theme.Customeraccount'}
+							</a></li>
+						{else}
+							<li><a id="address-link-mobile" href="{$urls.pages.address}">
+								<i class="material-icons">&#xE567;</i>
+								{l s='Add first address' d='Shop.Theme.Customeraccount'}
+							</a></li>
+						{/if}
+
+						{if !$configuration.is_catalog}
+							<li><a id="history-link-mobile" href="{$urls.pages.history}">
+								<i class="material-icons">&#xE916;</i>
+								{l s='Order history and details' d='Shop.Theme.Customeraccount'}
+							</a></li>
+						{/if}
+
+						{if !$configuration.is_catalog}
+							<li><a id="order-slips-link-mobile" href="{$urls.pages.order_slip}">
+								<i class="material-icons">&#xE8B0;</i>
+								{l s='Credit slips' d='Shop.Theme.Customeraccount'}
+							</a></li>
+						{/if}
+
+						{if $configuration.voucher_enabled && !$configuration.is_catalog}
+							<li><a id="discounts-link-mobile" href="{$urls.pages.discount}">
+								<i class="material-icons">&#xE54E;</i>
+								{l s='Vouchers' d='Shop.Theme.Customeraccount'}
+							</a></li>
+						{/if}
+
+						{if $configuration.return_enabled && !$configuration.is_catalog}
+							<li><a id="returns-link-mobile" href="{$urls.pages.order_follow}">
+								<i class="material-icons">&#xE860;</i>
+								{l s='Merchandise returns' d='Shop.Theme.Customeraccount'}
+							</a></li>
+						{/if}
+					</ul>
+				{/if}
 			</div>
 		{/if}
 

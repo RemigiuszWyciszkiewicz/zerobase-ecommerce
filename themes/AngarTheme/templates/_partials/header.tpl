@@ -18,9 +18,7 @@ information. * * @author PrestaShop SA
   <nav class="header-nav">
     <div class="container">
       <div class="header-banner-container">
-        <div>
-          {hook h='displayNav1'}
-        </div>
+        <div>{hook h='displayNav1'}</div>
         <div>
           <div class="delivery-info">
             <i class="fa-regular fa-truck delivery-info-icon"></i>
@@ -55,9 +53,11 @@ information. * * @author PrestaShop SA
         {/if}
       </div>
       <div class="cart-container">
-        <!-- <div class="profile-icon">
+        <a href="{$urls.pages.my_account}" title="{l s='View my customer account' d='Shop.Theme.Customeraccount'}" rel="nofollow">
+          <div class="profile-icon">
             <i class="fa-regular fa-user"></i>
-        </div> -->
+          </div>
+        </a>
         {widget name="ps_shoppingcart"}
       </div>
     </div>

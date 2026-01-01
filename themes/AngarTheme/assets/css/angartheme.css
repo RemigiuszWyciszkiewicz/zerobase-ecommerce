@@ -868,8 +868,8 @@ body.hide_prices_catalog_mode .ui-widget .search_right span.search_price {
 }
 
 .profile-icon {
-  position: absolute;
-  left: -50px;
+  margin-right: 0.5rem;
+  cursor: pointer;
 
   i {
     font-size: 27px;
@@ -5016,6 +5016,51 @@ body#checkout.bg_white
 .page-my-account #content .links a:hover i {
   color: #1b82d6;
 }
+.page-my-account #content .links a .material-icons {
+    font-size: 28px;
+    color: #f47021;
+    transition: color 0.3s ease;
+}
+
+.page-my-account #content .links .link-item {
+    background: none !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+.page-my-account #content .links {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1rem;
+  }
+
+.page-my-account #content .links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 16px 12px;
+    text-decoration: none;
+    background: #f5f5f5;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    text-align: center;
+    min-height: 100px;
+    width: 32%;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .page-my-account #content .links a {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+  .page-my-account #content .links .link-item {
+    padding: 0 !important;
+  }
+}
+
 
 /* My accout content */
 .page-customer-account #content {
