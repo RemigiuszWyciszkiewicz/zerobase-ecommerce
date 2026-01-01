@@ -22,18 +22,23 @@
  * @copyright Since 2007 PrestaShop SA and Contributors
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
-<nav data-depth="{$breadcrumb.count}" class="breadcrumb">
-  <ol>
+<nav data-depth="{$breadcrumb.count}" class="breadcrumb modern-breadcrumb">
+  <div class="breadcrumb-wrapper">
     {block name='breadcrumb'}
       {foreach from=$breadcrumb.links item=path name=breadcrumb}
         {block name='breadcrumb_item'}
-          <li>
-              <a href="{$path.url}">
-				<span>{$path.title}</span>
-			  </a>
-          </li>
+          <div class="breadcrumb-item">
+            {if !$smarty.foreach.breadcrumb.last}
+              <a href="{$path.url}" class="breadcrumb-link">
+                {$path.title}
+              </a>
+              <span class="breadcrumb-separator">/</span>
+            {else}
+              <span class="breadcrumb-current">{$path.title}</span>
+            {/if}
+          </div>
         {/block}
       {/foreach}
     {/block}
-  </ol>
+  </div>
 </nav>
