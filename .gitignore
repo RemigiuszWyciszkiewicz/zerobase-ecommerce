@@ -13,3 +13,16 @@
 /.htaccess
 /admin-dev/autoupgrade/
 /cache/
+
+# --- obrazki produktów ---
+/img/p/*
+!/img/p/index.php
+!/img/p/.htaccess
+
+# --- pliki importu ---
+/admin*/import/
+/admin*/export/
+*.xlsx
+*.xls
+*.csv
+/upload/

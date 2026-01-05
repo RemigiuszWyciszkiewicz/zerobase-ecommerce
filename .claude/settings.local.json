@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(php -v:*)",
+      "Bash(where:*)",
+      "Bash(cmd.exe /c \"dir c:\\\\laragon\\\\bin\\\\php /b\")",
+      "Bash(cmd.exe /c \"c:\\\\laragon\\\\bin\\\\php\\\\php-8.3.26-Win32-vs16-x64\\\\php.exe -m | findstr zip\")",
+      "Bash(cmd.exe /c \"c:\\\\laragon\\\\bin\\\\php\\\\php-8.3.26-Win32-vs16-x64\\\\php.exe -i | findstr \"\"Configuration File\"\"\")",
+      "Bash(tasklist:*)"
+    ]
+  }
+}
