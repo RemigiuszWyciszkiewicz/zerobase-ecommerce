@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Update channel handle (customUrl)
     const channelHandleEl = document.querySelector(".channel-handle");
     if (channelHandleEl && channel.snippet.customUrl) {
-      channelHandleEl.textContent = "@" + channel.snippet.customUrl;
+      channelHandleEl.textContent = "" + channel.snippet.customUrl;
     }
   }
 

@@ -135,6 +135,18 @@
 }
 
 /* Responsive */
+@media (max-width: 550px) {
+
+     .youtube-channel-inner {
+      flex-wrap: wrap;
+     }
+
+    .youtube-channel-follow-button-wrapper {
+        width: 100%;
+      }
+}
+
+/* Responsive */
 @media (max-width: 768px) {
     .youtube-channel-inner {
       /* flex-direction: column; */
