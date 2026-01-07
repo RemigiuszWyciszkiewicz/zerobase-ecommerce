@@ -1,8 +1,8 @@
 .products-container {
   padding: 1.5rem 0 1rem 0;
   border-radius: 0;
-  border: 1px solid #eaecf0;
-  background: #f9fafb;
+  /* border: 1px solid #eaecf0;
+  background: #f9fafb; */
   margin-top: 3rem;
   margin-bottom: 1rem;
 }
@@ -16,6 +16,7 @@
   color: #f47021;
   font-size: 2rem;
   border-radius: 4px;
+  padding: 4px;
   transition: background-color 0.3s ease, transform 0.1s ease;
   cursor: pointer;
 }
@@ -33,7 +34,7 @@
 .products-container .products-container-title {
   display: flex;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   width: 100%;
 }
 
@@ -92,9 +93,9 @@
 
 @media (min-width: 767px) {
   .products-container {
-    border: 1px solid #eaecf0;
-    background: #f9fafb;
-    padding: 1.5rem 2rem 1rem 2rem;
+    /* border: 1px solid #eaecf0;
+    background: #f9fafb; */
+    padding: 1.5rem 0rem 1rem 0rem;
     border-radius: 7px;
     margin-top: 3rem;
     margin-bottom: 2rem;

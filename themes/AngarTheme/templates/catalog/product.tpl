@@ -55,7 +55,7 @@
     <meta content="{$product.url}">
 
 {* AngarThemes *}
-    <div class="row product_container">
+    <div class="product_container">
       <div class="col-md-6 product_left">
         {block name='page_content_container'}
           <section class="page-content" id="content">

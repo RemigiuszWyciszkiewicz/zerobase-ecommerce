@@ -7,6 +7,8 @@
 @import "./cms-pages.css";
 @import "./home-products-list.css";
 @import "./footer-contact.css";
+@import "./layout.css";
+@import "./product-page.css";
 
 
 /*** AngarTheme - version 2.7.0 ***/
@@ -369,6 +371,7 @@ body #search_filters .facet .facet-label .custom-radio {
 /* Wrapper */
 #wrapper {
   padding-top: 15px;
+  background-color: #f3f5f7;
 }
 
 #index #wrapper {
@@ -2193,7 +2196,7 @@ display: none;
 
 /*** HOOK BOX ***/
 .hook_box {
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 /*** FOOTER ***/
@@ -3045,7 +3048,7 @@ div#category_desc {
 
 .product-cover {
   position: relative;
-  border: 1px solid #d6d4d4;
+  /* border: 1px solid #d6d4d4; */
   text-align: center;
   margin-bottom: 20px;
 }

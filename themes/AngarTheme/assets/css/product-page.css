@@ -1,0 +1,40 @@
+.page-product .product_container {
+  background-color: white;
+  padding: 2rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-bottom: 0 !important;
+  /* margin-right: 15px !important;
+  margin-left: 15px !important; */
+}
+
+.page-product .tabs {
+  background-color: white;
+  padding: 2rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.page-product .product_right {
+  background-color: #f3f5f7;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.page-product .data-sheet .name {
+  background-color: white !important;
+}
+.page-product .data-sheet .value {
+  background-color: white !important;
+}
+
+.page-product .index_title {
+    border-bottom: none !important;
+}
+
+.page-product .index_title span{
+    border-bottom: none !important;
+    font-size: 1.3rem;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}

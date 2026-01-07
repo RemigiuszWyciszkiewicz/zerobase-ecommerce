@@ -474,6 +474,11 @@ left: 0;
 right: 0;
 top: 0;
 z-index: 9;
+
+}
+
+.stickymenu .menu  {
+background-color: white !important;
 }
 
 /* .stickymenu_yes.sticky_menu_rwd .rwd_menu_open {
