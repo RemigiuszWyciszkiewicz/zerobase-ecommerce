@@ -603,7 +603,7 @@ nav.header-nav a {
   color: #f47021;
   padding-right: 4px;
   line-height: 16px;
-  font-size: inherit;
+  font-size: 16px;
   margin-right: 8px;
 }
 
@@ -664,6 +664,7 @@ ul.links_top li {
   padding-right: 4px;
   line-height: 16px;
   vertical-align: -1px;
+  font-size: 17px;
 }
 
 #contact-link span.shop-email i {

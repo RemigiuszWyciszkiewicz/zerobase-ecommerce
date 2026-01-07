@@ -13,6 +13,7 @@
 /.htaccess
 /admin-dev/autoupgrade/
 /cache/
+/.claude/settings.local.json
 
 # --- obrazki produktów ---
 /img/p/*
