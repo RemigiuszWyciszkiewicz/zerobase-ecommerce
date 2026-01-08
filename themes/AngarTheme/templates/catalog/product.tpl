@@ -103,18 +103,41 @@
             {/block}
           {/block}
 
+		  {* Product meta info: brand and availability *}
+		  <div class="product-meta-info">
+			<div class="product-meta-left">
+			  {* Availability will be moved here from product-add-to-cart.tpl *}
+			  <div id="product-availability-meta">
+				{if $product.show_availability && $product.availability_message}
+				  {if $product.availability == 'in_stock' && version_compare($smarty.const._PS_VERSION_, '9.0.0', '>=')}
+					<i class="material-icons rtl-no-flip product-available">&#xE5CA;</i>
+				  {elseif $product.availability == 'available'}
+					<i class="material-icons rtl-no-flip product-available{if version_compare($smarty.const._PS_VERSION_, '9.0.0', '>=')} product-available-backorder{/if}">&#xE5CA;</i>
+				  {elseif $product.availability == 'last_remaining_items'}
+					<i class="material-icons product-last-items">&#xE002;</i>
+				  {else}
+					<i class="material-icons product-unavailable">&#xE14B;</i>
+				  {/if}
+				  <span class="availability-text">{$product.availability_message}</span>
+				{/if}
+			  </div>
+			</div>
+
+			<div class="product-meta-right">
+			  {* AngarThemes *}
+			  {if isset($product_manufacturer->id)}
+				<div id="product_manufacturer">
+				  <label class="label">{l s='Brand' d='Shop.Theme.Catalog'}: </label>
+				  <a class="editable" href="{$product_brand_url}" title="{$product_manufacturer->name}"><span>{$product_manufacturer->name}</span></a>
+				</div>
+			  {/if}
+			</div>
+		  </div>
+
 		  {* AngarTheme mod - the reference code in the file below, product discounts are in the file product-variants.tpl *}
 		  {block name='product_discounts'}
 			{include file='catalog/_partials/product-discounts.tpl'}
 		  {/block}
-
-		  {* AngarThemes *}
-		  {if isset($product_manufacturer->id)}
-			<div id="product_manufacturer">
-			  <label class="label">{l s='Brand' d='Shop.Theme.Catalog'} </label>
-			  <a class="editable" href="{$product_brand_url}" title="{$product_manufacturer->name}"><span>{$product_manufacturer->name}</span></a>
-			</div>
-		  {/if}
 
 		  {* AngarThemes *}
 		  {hook h='displayCommentsExtra' product=$product}

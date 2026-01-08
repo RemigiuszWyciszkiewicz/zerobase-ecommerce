@@ -59,7 +59,8 @@
     {/block}
 
     {block name='product_availability'}
-      <span id="product-availability">
+      {* Availability moved to product meta info section above *}
+      <span id="product-availability" style="display:none;">
         {if $product.show_availability && $product.availability_message}
 		  {if $product.availability == 'in_stock' && version_compare($smarty.const._PS_VERSION_, '9.0.0', '>=')}
 			<i class="material-icons rtl-no-flip product-available">&#xE5CA;</i>
