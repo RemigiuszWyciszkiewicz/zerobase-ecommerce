@@ -1,5 +1,6 @@
 .page-content.page-cms {
   text-align: left;
+  background-color: #f3f5f7;
 }
 
 @media (max-width: 767px) {
