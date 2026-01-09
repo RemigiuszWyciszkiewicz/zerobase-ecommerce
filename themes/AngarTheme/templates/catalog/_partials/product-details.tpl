@@ -173,7 +173,7 @@
       {l s='Dostawa' d='Shop.Theme.Catalog'}
     </p>
 
-    <div class="delivery-info">
+    <div class="delivery-product-info">
       <div class="delivery-time">
         <svg
           class="delivery-icon"

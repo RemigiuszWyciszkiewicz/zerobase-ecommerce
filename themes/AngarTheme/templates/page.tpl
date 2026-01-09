@@ -27,8 +27,6 @@ information. * * @author PrestaShop SA
     </section>
     {/block}
 
-    <div class="yt-preview-container">{hook h='displayYoutubeChannel'} {hook h='displayYoutubeShorts'}</div>
-
     {block name='page_footer_container'}
     <footer class="page-footer">
       {block name='page_footer'}

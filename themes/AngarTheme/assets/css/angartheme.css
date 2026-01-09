@@ -3760,9 +3760,8 @@ div#product_comments_block_extra {
 
 .product-add-to-cart button.btn.add-to-cart i {
   position: absolute;
-  top: 12px;
   left: 14px;
-  font-size: 18px;
+  font-size: 26px;
 }
 
 /* In stock */
@@ -5114,7 +5113,7 @@ body#checkout.bg_white
     gap: 8px;
     padding: 16px 12px;
     text-decoration: none;
-    background: #f5f5f5;
+    background: white;
     border-radius: 12px;
     transition: all 0.3s ease;
     text-align: center;
