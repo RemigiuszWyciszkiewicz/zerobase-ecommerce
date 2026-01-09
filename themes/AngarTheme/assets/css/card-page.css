@@ -1,0 +1,226 @@
+
+/* Ukryj napis "Koszyk" */
+.page-cart #main .page-header,
+.page-cart .cart-overview-heading {
+  display: none !important;
+}
+
+/* Kontener koszyka */
+.page-cart .cart-overview.js-cart {
+  background: transparent;
+  padding: 0;
+}
+
+.page-cart .cart-container {
+ background: transparent;
+ border: none;
+}
+
+/* Lista produktów */
+.page-cart .cart-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Każdy produkt jako osobna karta */
+.page-cart .cart-item {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+  margin-bottom: 0 !important;
+}
+
+.page-cart .cart-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Layout wewnątrz karty produktu */
+.page-cart .product-line-grid {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Zdjęcie produktu */
+.page-cart .product-line-grid-left {
+  flex-shrink: 0;
+}
+
+.page-cart .product-image img {
+  border-radius: 6px;
+  max-width: 100%;
+  height: auto;
+  border: none;
+}
+
+/* Nazwa i szczegóły produktu */
+.page-cart .product-line-grid-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.page-cart .product-line-info .label_name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.page-cart .product-line-info .label_name:hover {
+  color: #333333;
+}
+
+/* Cena produktu */
+.page-cart .product-line-info.product-price {
+  margin-top: 8px;
+}
+
+.page-cart .product-price .price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.page-cart .product-discount .price_red {
+  font-size: 18px;
+  font-weight: 700;
+  color: #e74c3c;
+  margin-right: 8px;
+}
+
+.page-cart .product-discount .regular-price {
+  font-size: 14px;
+  color: #999999;
+  text-decoration: line-through;
+  margin-right: 8px;
+}
+
+.page-cart .product-discount .discount {
+  background-color: #e74c3c;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Atrybuty produktu */
+.page-cart .product-line-info .label {
+  font-size: 13px;
+  color: #666666;
+  font-weight: 500;
+}
+
+.page-cart .product-line-info .value {
+  font-size: 13px;
+  color: #333333;
+}
+
+/* Kontrolka ilości i cena całkowita */
+.page-cart .product-line-grid-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.page-cart .product-line-grid-right .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* gap: 15px; */
+}
+
+.page-cart .qty input {
+  width: 60px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.page-cart .price .product-price strong {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+}
+
+/* Przycisk usuwania */
+.page-cart .remove-from-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  /* background-color: #f5f5f5; */
+  transition: all 0.2s ease;
+  color: #666666;
+}
+
+.page-cart .remove-from-cart:hover {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.page-cart .remove-from-cart .material-icons {
+  font-size: 30px;
+}
+
+.page-cart .product-image {
+  border: none !important;
+}
+
+/* Ukryj stare nagłówki tabeli */
+.page-cart .cart-overview thead,
+.page-cart .cart-grid-body .card-block .cart-overview-table thead {
+  display: none !important;
+}
+
+/* Jeśli jest tabela, zmień na flex layout */
+.page-cart .cart-overview table {
+  display: block;
+  width: 100%;
+}
+
+.page-cart .cart-overview tbody {
+  display: block;
+}
+
+.page-cart .cart-overview tr {
+  display: block;
+}
+
+/* Responsive layout dla urządzeń mobilnych */
+@media (max-width: 768px) {
+  .page-cart .cart-item {
+    padding: 15px;
+  }
+
+  .page-cart .cart-items {
+    gap: 12px;
+  }
+}
+
+/* Upewnij się że karty mają odpowiedni margines od podsumowania */
+.page-cart .cart-grid-left {
+  padding-right: 20px;
+}
+
+@media (max-width: 991px) {
+  .page-cart .cart-grid-left {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+}

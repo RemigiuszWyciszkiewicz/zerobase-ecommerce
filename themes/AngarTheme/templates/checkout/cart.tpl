@@ -24,6 +24,11 @@
  *}
 {extends file=$layout}
 
+{block name='head_assets'}
+  {$smarty.block.parent}
+  <link rel="stylesheet" href="{$urls.theme_assets}css/card-page.css" type="text/css" media="all">
+{/block}
+
 {block name='content'}
 
   <section id="main">
@@ -34,10 +39,6 @@
 
         <!-- cart products detailed -->
         <div class="card cart-container">
-          <div class="card-block">
-            <h1 class="h1">{l s='Shopping Cart' d='Shop.Theme.Checkout'}</h1>
-          </div>
-          <hr class="separator">
           {block name='cart_overview'}
             {include file='checkout/_partials/cart-detailed.tpl' cart=$cart}
           {/block}
