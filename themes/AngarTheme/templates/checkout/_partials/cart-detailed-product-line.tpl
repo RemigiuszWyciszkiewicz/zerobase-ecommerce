@@ -27,7 +27,7 @@
 
 <div class="product-line-grid">
   <!--  product left content: image-->
-  <div class="product-line-grid-left col-md-3 col-xs-4">
+  <div class="product-line-grid-left col-md-2 col-xs-3">
     <span class="product-image media-middle">
 		{if !empty($product.cover.bySize.cart_default.url)}
 			<img src="{if !empty($product.default_image.bySize.cart_default.url)}{$product.default_image.bySize.cart_default.url}{else}{$product.cover.bySize.cart_default.url}{/if}" alt="{$product.name|escape:'quotes'}">
@@ -38,7 +38,7 @@
   </div>
 
   <!--  product left body: description -->
-  <div class="product-line-grid-body col-md-4 col-xs-8">
+  <div class="product-line-grid-body col-md-5 col-xs-9">
     <div class="product-line-info">
       <a class="label_name" href="{$product.url}" data-id_customization="{$product.id_customization|intval}">{$product.name}</a>
     </div>
@@ -121,10 +121,9 @@
   <!--  product left body: description -->
   <div class="product-line-grid-right product-line-actions col-md-5 col-xs-12">
     <div class="row">
-      <div class="col-xs-4 hidden-md-up"></div>
-      <div class="col-md-10 col-xs-6">
-        <div class="row">
-          <div class="col-md-6 col-xs-6 qty">
+      <div class="col-md-10 col-xs-10">
+        <div >
+          <div class="qty">
             {if isset($product.is_gift) && $product.is_gift}
               <span class="gift-quantity">{$product.quantity}</span>
             {else}
@@ -141,7 +140,7 @@
               />
             {/if}
           </div>
-          <div class="col-md-6 col-xs-2 price">
+          <div class="price">
             <span class="product-price">
               <strong>
                 {if isset($product.is_gift) && $product.is_gift}
@@ -166,7 +165,8 @@
               data-id-customization   	  = "{$product.id_customization|escape:'javascript'}"
           >
             {if !isset($product.is_gift) || !$product.is_gift}
-            <i class="material-icons float-xs-left">delete</i>
+            <!-- <i class="material-icons float-xs-left">delete</i> -->
+            <i class="fa-regular fa-trash-can"></i>
             {/if}
           </a>
 
