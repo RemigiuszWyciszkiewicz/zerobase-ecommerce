@@ -185,6 +185,10 @@
   #_desktop_logo {
     padding-top: 20px;
   }
+
+  img {
+  scale: 1.15;
+  }
 }
 
 /*** TABLETS ***/

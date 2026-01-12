@@ -8,6 +8,7 @@
 @import "./home-products-list.css";
 @import "./footer-contact.css";
 @import "./layout.css";
+@import "./buttons.css";
 @import "./product-page.css";
 @import "./card-page.css";
 
@@ -1048,7 +1049,7 @@ header#header nav.header-nav #subcart {
   top: 70px;
   right: 15px;
   z-index: 100;
-  width: 270px;
+  width: 320px;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease-in-out 0s;
@@ -1061,14 +1062,15 @@ header#header nav.header-nav #subcart {
 }
 
 #subcart {
-  background: #484848;
+  background: #f3f5f7;
   color: #000;
-  background: #fff;
-  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+  /* border: 1px solid #f3f5f7; */
+  border: 1px solid #e5e7eb !important;
 }
 
 /* Cart products */
-#subcart ul.cart_products {
+#subcart ul.cart_products { 
   background: #f5f5f5;
   margin-bottom: 0;
 }
@@ -1076,7 +1078,10 @@ header#header nav.header-nav #subcart {
 #subcart ul.cart_products > li {
   font-weight: normal;
   padding: 14px 16px 14px 18px;
-  border-bottom: 1px solid #e2e2e2;
+  background-color: white;
+  margin: 8px 8px;
+  border-radius: 9px;
+  /* border-bottom: 1px solid #e2e2e2; */
 }
 
 #subcart ul.cart_products li .cart_left {
@@ -1086,7 +1091,7 @@ header#header nav.header-nav #subcart {
 }
 
 #subcart ul.cart_products li .cart_left img {
-  border: 1px solid #e2e2e2;
+  /* border: 1px solid #e2e2e2; */
 }
 
 #subcart ul.cart_products li .cart_right {
@@ -1099,7 +1104,7 @@ header#header nav.header-nav #subcart {
 #subcart ul.cart_products li .cart_right .product-price {
   display: block;
   font-weight: bold;
-  margin-top: 14px;
+  margin-top: 5px;
 }
 
 #subcart ul.cart_products li a.remove-from-cart {
@@ -1137,9 +1142,10 @@ header#header nav.header-nav #subcart {
 
 #subcart ul.cart-subtotals li {
   width: 100%;
-  border-bottom: 1px solid #e2e2e2;
+  /* border-bottom: 1px solid #e2e2e2; */
   line-height: 30px;
-  font-weight: bold;
+  margin-bottom: 8px;
+  /* font-weight: bold; */
 }
 
 #subcart ul.cart-subtotals li:last-child {
@@ -1148,10 +1154,13 @@ header#header nav.header-nav #subcart {
 
 #subcart ul.cart-subtotals li .text {
   float: left;
+  font-size: 12px;
+  font-weight: 500;
 }
 
 #subcart ul.cart-subtotals li .value {
   float: right;
+  font-size: 20px;
 }
 
 /* Cart buttons */
@@ -1167,7 +1176,7 @@ header#header nav.header-nav #subcart {
   text-align: center;
   padding: 8px 12px;
   background: #1b82d6;
-  color: #ffffff;
+  color: #ffffff !important;
   border-color: #1b82d6;
 }
 
@@ -3864,7 +3873,7 @@ p.product-minimal-quantity {
 body .blockreassurance_product {
   clear: both;
   margin-top: 20px;
-  border: 1px solid #d6d4d4;
+  /* border: 1px solid #d6d4d4; */
   text-transform: uppercase;
 }
 
@@ -4568,7 +4577,7 @@ ul.cart-items li:last-child {
 
 /* Price */
 .cart-grid .product-line-info.product-price.h5 {
-  margin: 14px 0 14px;
+  margin: 5px 0 14px;
 }
 
 .cart-grid .current-price span {
@@ -4618,7 +4627,6 @@ ul.cart-items li:last-child {
 .product-line-grid-right .product-price .remove-from-cart {
   display: inline-block;
   color: #666;
-  margin-top: 6px;
 }
 
 .product-line-grid-right .cart-line-product-actions .remove-from-cart:hover,

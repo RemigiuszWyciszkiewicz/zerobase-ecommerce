@@ -28,6 +28,12 @@ main {
   background-color: white !important;
 }
 
+@media (max-width: 768px) {
+  #header {
+    background-color: #f3f5f7 !important;
+  }
+}
+
 @media (min-width: 768px) {
   .yt-preview-container {
     padding: 4rem 0;
@@ -36,5 +42,9 @@ main {
   .yt-preview-container > * {
     /* padding-left: 2rem;
     padding-right: 2rem; */
+  }
+
+  header {
+    background-color: #0f85fa !important;
   }
 }

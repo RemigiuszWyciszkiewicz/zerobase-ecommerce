@@ -58,10 +58,8 @@
 
       <!-- Right Block: cart subtotal & cart total -->
       <div class="cart-grid-right col-xs-12 col-lg-4">
-
         {block name='cart_summary'}
           <div class="card cart-summary">
-
             {block name='hook_shopping_cart'}
               {hook h='displayShoppingCart'}
             {/block}
