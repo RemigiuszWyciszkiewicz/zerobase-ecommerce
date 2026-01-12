@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 main {
   background-color: #f3f5f7;
 }
@@ -14,6 +18,7 @@ main {
   margin-left: calc(-50vw + 50%);
   padding: 2rem 0;
   margin-bottom: 4rem;
+  box-sizing: border-box;
 }
 
 .yt-preview-container > * {
