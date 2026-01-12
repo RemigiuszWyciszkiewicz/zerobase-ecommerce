@@ -1,0 +1,111 @@
+/* Primary Button - Nowoczesny styl z kolorem akcentowym #f47021 */
+.btn-primary {
+    padding: 12px 32px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "proxima-nova", sans-serif;
+    background: #f47021;
+    color: #ffffff;
+    border-radius: 6px;
+    border: 2px solid #f47021;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-transform: none;
+    letter-spacing: 0.3px;
+    box-shadow: 0 2px 8px rgba(244, 112, 33, 0.2);
+}
+
+.btn-primary:hover {
+    background: #d85f1a;
+    border-color: #d85f1a;
+    color: #ffffff;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(244, 112, 33, 0.3);
+}
+
+.btn-primary:active {
+    background: #c55417;
+    border-color: #c55417;
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(244, 112, 33, 0.2);
+}
+
+.btn-primary:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(244, 112, 33, 0.25);
+}
+
+.btn-primary:disabled,
+.btn-primary.disabled {
+    background: #cccccc;
+    border-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+    opacity: 0.6;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Wariant - Secondary (outline) */
+.btn-primary.btn-outline {
+    background: transparent;
+    color: #f47021;
+    border-color: #f47021;
+    box-shadow: none;
+}
+
+.btn-primary.btn-outline:hover {
+    background: #f47021;
+    color: #ffffff;
+    border-color: #f47021;
+}
+
+/* Wariant - Dark */
+.btn-primary.btn-dark {
+    background: #000000;
+    border-color: #000000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary.btn-dark:hover {
+    background: #333333;
+    border-color: #333333;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Wariant - Light */
+.btn-primary.btn-light {
+    background: #ffffff;
+    border-color: #e0e0e0;
+    color: #000000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.btn-primary.btn-light:hover {
+    background: #f8f9fa;
+    border-color: #cccccc;
+    color: #000000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Rozmiary */
+.btn-primary.btn-sm {
+    padding: 8px 20px;
+    font-size: 13px;
+}
+
+.btn-primary.btn-lg {
+    padding: 16px 40px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+/* Full width */
+.btn-primary.btn-block {
+    width: 100%;
+    display: flex;
+}
