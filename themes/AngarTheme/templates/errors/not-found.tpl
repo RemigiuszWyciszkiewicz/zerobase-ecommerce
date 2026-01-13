@@ -23,6 +23,11 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 
+{* Load custom not-found styles *}
+{block name='head_assets'}
+  <link rel="stylesheet" href="{$urls.base_url}themes/AngarTheme/assets/css/not-found.css" type="text/css" media="all">
+{/block}
+
 {if $page.page_name == 'category'}
 
 	{if $subcategories|count}
@@ -30,18 +35,40 @@
 	{else}
 	<section id="content" class="page-content page-not-found">
 	  {block name='page_content'}
+		<div class="not-found-container">
+		  <div class="not-found-icon">
+			<i class="fa-regular fa-face-frown"></i>
+		  </div>
 
-		<h4>{l s='Sorry for the inconvenience.' d='Shop.Theme.Global'}</h4>
-		<p>{l s='Search again what you are looking for' d='Shop.Theme.Global'}</p>
+		  <h2 class="not-found-title">{l s='Nie znaleziono produktów' d='Shop.Theme.Global'}</h2>
+		  <p class="not-found-description">{l s='Niestety, nie znaleźliśmy produktów pasujących do Twojego wyszukiwania.' d='Shop.Theme.Global'}</p>
 
-		{block name='search'}
-		  {hook h='displaySearch'}
-		{/block}
+		  <div class="not-found-suggestions">
+			<p class="suggestions-title">{l s='Spróbuj:' d='Shop.Theme.Global'}</p>
+			<ul class="suggestions-list">
+			  <li>{l s='Użyć innych słów kluczowych' d='Shop.Theme.Global'}</li>
+			  <li>{l s='Sprawdzić pisownię' d='Shop.Theme.Global'}</li>
+			  <li>{l s='Użyć bardziej ogólnych fraz' d='Shop.Theme.Global'}</li>
+			</ul>
+		  </div>
 
-		{block name='hook_not_found'}
-		  {hook h='displayNotFound'}
-		{/block}
+		  {block name='search'}
+			<div class="not-found-search">
+			  {hook h='displaySearch'}
+			</div>
+		  {/block}
 
+		  <div class="not-found-actions">
+			<a href="{$urls.base_url}" class="btn btn-primary">
+			  <i class="fa-solid fa-house"></i>
+			  {l s='Wróć do strony głównej' d='Shop.Theme.Global'}
+			</a>
+		  </div>
+
+		  {block name='hook_not_found'}
+			{hook h='displayNotFound'}
+		  {/block}
+		</div>
 	  {/block}
 	</section>
 	{/if}
@@ -50,18 +77,40 @@
 
 	<section id="content" class="page-content page-not-found">
 	  {block name='page_content'}
+		<div class="not-found-container">
+		  <div class="not-found-icon">
+			<i class="fa-regular fa-face-frown"></i>
+		  </div>
 
-		<h4>{l s='Sorry for the inconvenience.' d='Shop.Theme.Global'}</h4>
-		<p>{l s='Search again what you are looking for' d='Shop.Theme.Global'}</p>
+		  <h2 class="not-found-title">{l s='Nie znaleziono produktów' d='Shop.Theme.Global'}</h2>
+		  <p class="not-found-description">{l s='Niestety, nie znaleźliśmy produktów pasujących do Twojego wyszukiwania.' d='Shop.Theme.Global'}</p>
 
-		{block name='search'}
-		  {hook h='displaySearch'}
-		{/block}
+		  <div class="not-found-suggestions">
+			<p class="suggestions-title">{l s='Spróbuj:' d='Shop.Theme.Global'}</p>
+			<ul class="suggestions-list">
+			  <li>{l s='Użyć innych słów kluczowych' d='Shop.Theme.Global'}</li>
+			  <li>{l s='Sprawdzić pisownię' d='Shop.Theme.Global'}</li>
+			  <li>{l s='Użyć bardziej ogólnych fraz' d='Shop.Theme.Global'}</li>
+			</ul>
+		  </div>
 
-		{block name='hook_not_found'}
-		  {hook h='displayNotFound'}
-		{/block}
+		  {block name='search'}
+			<div class="not-found-search">
+			  {hook h='displaySearch'}
+			</div>
+		  {/block}
 
+		  <div class="not-found-actions">
+			<a href="{$urls.base_url}" class="btn btn-primary">
+			  <i class="fa-solid fa-house"></i>
+			  {l s='Wróć do strony głównej' d='Shop.Theme.Global'}
+			</a>
+		  </div>
+
+		  {block name='hook_not_found'}
+			{hook h='displayNotFound'}
+		  {/block}
+		</div>
 	  {/block}
 	</section>
 
