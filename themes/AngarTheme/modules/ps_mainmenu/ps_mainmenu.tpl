@@ -204,7 +204,7 @@
     <div class="clearfix"></div>
 </div>
 
-<div class="menu js-top-menu position-static hidden-md-up" id="_mobile_top_menu" aria-label="{l s='Main menu' d='Modules.Mainmenu.Admin'}">
+<div class="menu js-top-menu position-static hidden-md-up" id="_mobile_top_main_menu" aria-label="{l s='Main menu' d='Modules.Mainmenu.Admin'}">
 	<ul class="top-menu container top-menu-desktop">
 		<li class="home_icon"><a href="{$urls.base_url}"><i class="icon-home"></i><span class="sr-only">{l s='Home' d='Shop.Theme.Global'}</span></a></li>
 		{foreach from=$menu.children item=node}
@@ -223,5 +223,5 @@
 		{/foreach}
 	</ul>
     <div class="clearfix"></div>
-</div>
+</div> 
 

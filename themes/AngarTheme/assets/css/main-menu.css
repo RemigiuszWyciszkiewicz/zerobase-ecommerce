@@ -304,35 +304,35 @@ body:not(.page-index) .menu-story-label {
     display: none !important;
   }
 
-  #_mobile_top_menu .top-menu-desktop {
+  #_mobile_top_main_menu .top-menu-desktop {
     display: flex;
     gap: 12px;
     padding: 20px 0px 0px 0px;
     scrollbar-width: none;
   }
 
-  #_mobile_top_menu .menu-story-link {
+  #_mobile_top_main_menu .menu-story-link {
     width: 75px;
   }
 
-  #_mobile_top_menu .top-menu-desktop::-webkit-scrollbar {
+  #_mobile_top_main_menu .top-menu-desktop::-webkit-scrollbar {
     display: none;
   }
 
-  #_mobile_top_menu .menu-story-thumbnail {
+  #_mobile_top_main_menu .menu-story-thumbnail {
     width: 65px;
     height: 65px;
     border: 2px solid #f47021;
     padding: 2px;
   }
 
-  #_mobile_top_menu .menu-story-label {
+  #_mobile_top_main_menu .menu-story-label {
     font-size: 10px;
     max-width: 60px;
     min-height: 28px;
   }
 
-  #_mobile_top_menu .menu-story-placeholder {
+  #_mobile_top_main_menu .menu-story-placeholder {
     font-size: 20px;
   }
 
