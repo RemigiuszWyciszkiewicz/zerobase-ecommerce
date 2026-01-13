@@ -20,6 +20,9 @@
 !/img/p/index.php
 !/img/p/.htaccess
 
+img/tmp/
+img
+
 # --- pliki importu ---
 /admin*/import/
 /admin*/export/

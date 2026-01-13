@@ -69,6 +69,7 @@
   width: calc(20% - 12px);
   min-width: 200px;
   position: relative;
+  z-index: 0;
 }
 
 .youtube-short-thumbnail {
