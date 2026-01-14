@@ -1255,6 +1255,7 @@ header#header nav.header-nav #subcart {
 #_desktop_top_menu ul.top-menu .popover.sub-menu {
   top: initial !important;
   left: 0px;
+  margin-left: 1px !important;
   width: 200px;
   border: 0;
   background: #fff;
