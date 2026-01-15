@@ -9,7 +9,7 @@
 }
 
 .page-product .product_right {
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  /* font-family: "inter-variable", sans-serif; */
 }
 
 /* Product Meta Info (Brand + Availability) */
@@ -184,7 +184,6 @@
   font-size: 1.2rem;
   font-weight: 500;
   color: #0f0f0f;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
 .page-product .index_title span {
@@ -192,11 +191,9 @@
   font-size: 1.2rem;
   font-weight: 500;
   color: #0f0f0f;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
 .page-product .product-description {
-  font-family: "Poppins", Arial, Helvetica, sans-serif !important;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -205,7 +202,6 @@
 /* Nutrition Facts Styles */
 .nutrition {
   margin-top: 2rem;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
 .nutrition .h6 {
@@ -287,9 +283,8 @@
 }
 
 /* Delivery Info Styles */
-.page-product .delivery-product-info {
+.page-product .delivery-delivery-info {
   margin-top: 1.5rem;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
   display: flex;
 }
 
@@ -529,7 +524,6 @@
   width: 100%;
   display: block;
   transition: background-color 0.3s ease;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
 .product-quantity .add .btn-primary.add-to-cart:hover {
@@ -557,7 +551,6 @@
   }
 
   .page-product .product_right {
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
   margin: 0 1rem;
 }
 
@@ -601,8 +594,8 @@
     font-size: 0.95rem;
   }
 
-  .page-product .delivery-info {
-    flex-direction: column;
+  .page-product .delivery-delivery-info {
+    justify-content: space-around;
   }
 
   .delivery-time {

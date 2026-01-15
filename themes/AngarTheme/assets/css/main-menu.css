@@ -195,6 +195,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "proxima-nova", sans-serif !important;
 }
 
 .menu-story-link:hover .menu-story-label {

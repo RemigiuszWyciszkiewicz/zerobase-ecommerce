@@ -11,6 +11,7 @@
 @import "./buttons.css";
 @import "./product-page.css";
 @import "./card-page.css";
+@import "./card-modal.css";
 
 
 /*** AngarTheme - version 2.7.0 ***/
@@ -47,8 +48,9 @@ body {
   background-repeat: repeat;
   background-position: left top;
   color: #000;
-  font-family: "proxima-nova", sans-serif !important;
-  /* font-family: "Poppins", Arial, Helvetica, sans-serif; */
+  font-family: "inter-variable", sans-serif !important;
+  /* font-family: "inter-variable", sans-serif !important; */
+  /* font-family: "inter-variable", sans-serif;; */
   line-height: 18px;
   font-size: 13px;
   -webkit-font-smoothing: antialiased;
@@ -1251,7 +1253,7 @@ header#header nav.header-nav #subcart {
 #_desktop_top_menu ul.top-menu .popover.sub-menu.collapse {
   display: none;
 }
-
+ 
 #_desktop_top_menu ul.top-menu .popover.sub-menu {
   top: initial !important;
   left: 0px;
