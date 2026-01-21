@@ -14,7 +14,7 @@
       </trans-unit>
       <trans-unit id="8bf910bb9ffa608d4c7fd6504667d62f" approved="yes">
         <source>Connected as</source>
-        <target state="final">Połączony jako</target>
+        <target state="final">Zalogowany jako </target>
         <note>Line: 156</note>
       </trans-unit>
     </body>

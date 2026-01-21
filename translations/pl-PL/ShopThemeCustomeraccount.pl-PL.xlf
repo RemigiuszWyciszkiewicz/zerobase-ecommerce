@@ -109,11 +109,11 @@
     <body>
       <trans-unit id="6280ed214163d6e214763ff970910cdc" approved="yes">
         <source>Connected as [1]%firstname% %lastname%[/1].</source>
-        <target state="final">Połączony jako [1]%firstname% %lastname%[/1].</target>
+        <target state="final">Zalogowany jako  [1]%firstname% %lastname%[/1].</target>
         <note>Line: 13</note>
       </trans-unit>
       <trans-unit id="8e3ecabff428ab5465ab8feb928436e0" approved="yes">
-        <source>Not you? [1]Log out[/1]</source>
+        <source>To nie Ty? [1]Log out[/1]</source>
         <target state="final">Nie Ty? [1]Wyloguj się[/1]</target>
         <note>Line: 26</note>
       </trans-unit>

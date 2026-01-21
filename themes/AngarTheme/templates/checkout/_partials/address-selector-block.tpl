@@ -26,49 +26,65 @@
 {* AngarThemes *}
 
 {block name='address_selector_blocks'}
-  {foreach $addresses as $address}
-    <article
-      class="address-item{if $address.id == $selected} selected{/if}"
-      id="{$name|classname}-address-{$address.id}"
-    >
-      <header>
-        <label class="radio-block">
-          <span class="custom-radio">
-            <input
-              type="radio"
-              name="{$name}"
-              value="{$address.id}"
-              {if $address.id == $selected}checked{/if}
-            >
-            <span></span>
+  <div class="address-selector-grid">
+    {foreach $addresses as $address}
+      <article
+        class="address-card{if $address.id == $selected} selected{/if}"
+        id="{$name|classname}-address-{$address.id}"
+      >
+        <label class="address-card-inner">
+          <input
+            type="radio"
+            name="{$name}"
+            value="{$address.id}"
+            {if $address.id == $selected}checked{/if}
+            class="address-radio"
+          >
+          <span class="address-check">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
           </span>
-          <span class="address-alias">{$address.alias}</span>
-          <div class="address">{$address.formatted nofilter}</div>
+          <div class="address-card-content">
+            <div class="address-card-header">
+              <span class="address-alias">{$address.alias}</span>
+            </div>
+            <div class="address-body">{$address.formatted nofilter}</div>
+          </div>
         </label>
-      </header>
-      <hr>
-      <footer class="address-footer">
         {if $interactive}
-          <a
-            class="edit-address"
-            data-link-action="edit-address"
-            href="{url entity='order' params=['id_address' => $address.id, 'editAddress' => $type, 'token' => $token]}"
-          >
-            <i class="material-icons edit">&#xE254;</i>{l s='Edit' d='Shop.Theme.Actions'}
-          </a>
-          <a
-            class="delete-address"
-            data-link-action="delete-address"
-            href="{url entity='order' params=['id_address' => $address.id, 'deleteAddress' => true, 'token' => $token]}"
-          >
-            <i class="material-icons delete">&#xE872;</i>{l s='Delete' d='Shop.Theme.Actions'}
-          </a>
+          <div class="address-actions">
+            <a
+              class="action-btn edit-address"
+              data-link-action="edit-address"
+              href="{url entity='order' params=['id_address' => $address.id, 'editAddress' => $type, 'token' => $token]}"
+              title="{l s='Edit' d='Shop.Theme.Actions'}"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+              </svg>
+              <span>{l s='Edit' d='Shop.Theme.Actions'}</span>
+            </a>
+            <a
+              class="action-btn delete-address"
+              data-link-action="delete-address"
+              href="{url entity='order' params=['id_address' => $address.id, 'deleteAddress' => true, 'token' => $token]}"
+              title="{l s='Delete' d='Shop.Theme.Actions'}"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="3 6 5 6 21 6"></polyline>
+                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+              </svg>
+              <span>{l s='Delete' d='Shop.Theme.Actions'}</span>
+            </a>
+          </div>
         {/if}
-      </footer>
-    </article>
-  {/foreach}
+      </article>
+    {/foreach}
+  </div>
   {if $interactive}
-    <p>
+    <p class="address-save-wrapper">
       <button class="ps-hidden-by-js form-control-submit center-block" type="submit">{l s='Save' d='Shop.Theme.Actions'}</button>
     </p>
   {/if}
