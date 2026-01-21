@@ -844,6 +844,11 @@ color: #fff;
 }
 
 @media (max-width: 767px) {
+
+  body#checkout section.checkout-step {
+    padding: 2rem;
+  }
+  
   .col-md-6.product_left {
     margin-bottom: 20px;
   }

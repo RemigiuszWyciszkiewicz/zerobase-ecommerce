@@ -25,7 +25,7 @@
 
 {* AngarThemes *}
 
-<section id="js-checkout-summary" class="card js-cart" data-refresh-url="{$urls.pages.cart}?ajax=1&action=refresh">
+<section id="js-checkout-summary" class="card js-cart checkout-summary" data-refresh-url="{$urls.pages.cart}?ajax=1&action=refresh">
   <div class="card-block">
 
     <h4 class="show_cart"><a rel="nofollow" href="{$urls.pages.cart}?action=show">{l s='Shopping Cart' d='Shop.Theme.Checkout'}</a></h4>

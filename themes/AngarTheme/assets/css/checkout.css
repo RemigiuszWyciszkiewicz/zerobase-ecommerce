@@ -1,0 +1,21 @@
+.checkout-summary {
+  border: none;
+  border-radius: 8px;
+}
+
+.checkout-process .checkout-step {
+  box-shadow: none !important;
+  background-color: #fff;
+  padding: 0.9375rem;
+  border-bottom: 1px solid #dcdcdc !important;
+  /* border-radius: 8px; */
+}
+
+.checkout-process .checkout-step:first-child {
+  border-radius: 8px 8px 0 0;
+}
+
+.checkout-process .checkout-step:last-child {
+  border-bottom: none !important;
+  border-radius: 0 0 8px 8px;
+}
