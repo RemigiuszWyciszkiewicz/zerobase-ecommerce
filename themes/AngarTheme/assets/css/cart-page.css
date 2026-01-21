@@ -281,7 +281,7 @@
   font-weight: 500;
   text-decoration: none;
   transition: all 0.2s ease;
-  font-family: "inter-variable", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .page-cart .cart-grid-body .label:hover {

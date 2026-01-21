@@ -48,7 +48,7 @@ body {
   background-repeat: repeat;
   background-position: left top;
   color: #000;
-  font-family: "inter-variable", sans-serif !important;
+  font-family: "Inter", sans-serif !important;
   /* font-family: "inter-variable", sans-serif !important; */
   /* font-family: "inter-variable", sans-serif;; */
   line-height: 18px;
@@ -2218,7 +2218,7 @@ display: none;
   color: #fff;
   padding-top: 20px;
   position: relative;
-  background: #1b1a1b;
+  background: #000000 !important;
   margin: 0 auto;
   border-top: 1px solid #363636;
 }
@@ -2487,7 +2487,7 @@ p#block-social-label {
   padding: 10px 15px;
   text-align: center;
   border-top: 1px solid #363636;
-  background: #1b1a1b;
+  background: #000000 !important;
   color: #fff;
 }
 
