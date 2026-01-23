@@ -1,0 +1,16 @@
+# =============================================
+# Social Media Tracking Redirects
+# Format: zerobase.pl/l/platform-campaign
+# =============================================
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /l/
+
+# YouTube
+RewriteRule ^mrs-taste-syrop-klonowy-bez-cukru$ /pl/sosy/212-mrs-taste-syrop-klonowy-bez-cukru.html?utm_source=youtube&utm_medium=comment [R=301,L]
+
+# Dodaj kolejne przekierowania poniżej w formacie:
+# RewriteRule ^SKROT$ /pl/?utm_source=ZRODLO&utm_medium=TYP&utm_campaign=KAMPANIA [R=301,L]
+
+</IfModule>
