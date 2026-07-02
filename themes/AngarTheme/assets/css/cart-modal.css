@@ -30,7 +30,7 @@
 
 /* Modal Header */
 #blockcart-modal .modal-header {
-  background: linear-gradient(135deg, #f47021 0%, #ff8c42 100%);
+  background: linear-gradient(135deg, #000000 0%, #000000 100%);
   border: none;
   padding: 20px 24px;
   display: flex;

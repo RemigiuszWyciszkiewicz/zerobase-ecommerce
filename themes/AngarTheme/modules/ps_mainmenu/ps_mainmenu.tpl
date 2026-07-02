@@ -140,7 +140,13 @@
 								{if $node.image_urls[0]}
 									<img src="{$node.image_urls[0]}" alt="{$node.label}">
 								{else}
-									<div class="menu-story-placeholder">{$node.label|truncate:1:''}</div>
+									{assign var=_menu_icon_map value=['kremy'=>'kremy.svg','pieczywo'=>'pieczywo.svg','sosy zero'=>'sosy-zero.svg','sosy-zero'=>'sosy-zero.svg']}
+									{assign var=_menu_key value=$node.label|lower|trim}
+									{if isset($_menu_icon_map[$_menu_key])}
+										<img src="{$urls.theme_assets}img/menu/{$_menu_icon_map[$_menu_key]}" alt="{$node.label}" class="menu-story-icon">
+									{else}
+										<div class="menu-story-placeholder">{$node.label|truncate:1:''}</div>
+									{/if}
 								{/if}
 							</div>
 							<span class="menu-story-label">{$node.label}</span>
@@ -214,7 +220,13 @@
 						{if $node.image_urls[0]}
 							<img src="{$node.image_urls[0]}" alt="{$node.label}">
 						{else}
-							<div class="menu-story-placeholder">{$node.label|truncate:1:''}</div>
+							{assign var=_menu_icon_map value=['kremy'=>'kremy.svg','pieczywo'=>'pieczywo.svg','sosy zero'=>'sosy-zero.svg','sosy-zero'=>'sosy-zero.svg']}
+							{assign var=_menu_key value=$node.label|lower|trim}
+							{if isset($_menu_icon_map[$_menu_key])}
+								<img src="{$urls.theme_assets}img/menu/{$_menu_icon_map[$_menu_key]}" alt="{$node.label}" class="menu-story-icon">
+							{else}
+								<div class="menu-story-placeholder">{$node.label|truncate:1:''}</div>
+							{/if}
 						{/if}
 					</div>
 					<span class="menu-story-label">{$node.label}</span>

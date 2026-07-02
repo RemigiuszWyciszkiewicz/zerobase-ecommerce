@@ -22,6 +22,9 @@
 
 img/tmp/
 img
+!themes/AngarTheme/assets/img/
+!themes/AngarTheme/assets/img/menu/
+!themes/AngarTheme/assets/img/menu/*.svg
 
 # --- pliki importu ---
 /admin*/import/
