@@ -167,17 +167,6 @@
   border: 2px solid white;
 }
 
-.menu-story-thumbnail:has(.menu-story-icon) {
-  background: #fff;
-  padding: 6px;
-}
-
-.menu-story-thumbnail img.menu-story-icon {
-  object-fit: contain;
-  border: none;
-  background: transparent;
-}
-
 .menu-story-placeholder {
   width: 100%;
   height: 100%;
