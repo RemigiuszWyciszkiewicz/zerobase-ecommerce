@@ -41,7 +41,7 @@
                                                                                          **
 
              --- ===== Installation instructions for PrestaShop 8 ===== ---
-
+Remigiusz
 
 
 === Requirements
