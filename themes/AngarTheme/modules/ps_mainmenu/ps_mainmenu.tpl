@@ -140,10 +140,9 @@
 								{if $node.image_urls[0]}
 									<img src="{$node.image_urls[0]}" alt="{$node.label}">
 								{else}
-									{assign var=_menu_icon_map value=['kremy'=>'kremy.svg','pieczywo'=>'pieczywo.svg','sosy zero'=>'sosy-zero.svg','sosy-zero'=>'sosy-zero.svg']}
-									{assign var=_menu_key value=$node.label|lower|trim}
-									{if isset($_menu_icon_map[$_menu_key])}
-										<img src="{$urls.theme_assets}img/menu/{$_menu_icon_map[$_menu_key]}" alt="{$node.label}" class="menu-story-icon">
+									{assign var=_menu_icon_map value=['category-7'=>'sosy-zero.svg','category-8'=>'pieczywo.svg','category-9'=>'kawa.svg','category-11'=>'slodziki.svg','category-12'=>'spray.svg','category-13'=>'slodycze.svg','category-14'=>'kremy.svg','category-15'=>'przekaski.svg','category-21'=>'keto.svg','lnk-darmowe-e-booki'=>'ebook.svg']}
+									{if isset($_menu_icon_map[$node.page_identifier])}
+										<img src="{$urls.theme_assets}img/menu/{$_menu_icon_map[$node.page_identifier]}" alt="{$node.label}" class="menu-story-icon">
 									{else}
 										<div class="menu-story-placeholder">{$node.label|truncate:1:''}</div>
 									{/if}
