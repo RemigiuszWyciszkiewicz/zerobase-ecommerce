@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(php -v 2>&1 | head -3; echo \"---\"; ls \"/c/laragon/bin/mysql\" 2>/dev/null | head -5)",
+      "Read(//c/laragon/bin/mysql/**)",
+      "Bash(ls \"/c/laragon/laragon.exe\" 2>/dev/null && echo \"LARAGON INSTALLED\" || echo \"NOT FOUND\")",
+      "Read(//c/laragon/**)"
+    ]
+  }
+}
